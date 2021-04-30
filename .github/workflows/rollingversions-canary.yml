@@ -15,6 +15,6 @@ jobs:
           node-version: 12.x
           registry-url: 'https://registry.npmjs.org'
       - run: npm install
-      - run: npx rollingversions@canary publish --canary $GITHUB_RUN_NUMBER
+      - run: npx rollingversions@canary publish --canary $GITHUB_RUN_NUMBER --backend "https://staging.rollingversions.com"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
