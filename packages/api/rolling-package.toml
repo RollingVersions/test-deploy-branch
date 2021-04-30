@@ -1,0 +1,4 @@
+name = "api"
+
+[scripts]
+publish = "node publish.js"
