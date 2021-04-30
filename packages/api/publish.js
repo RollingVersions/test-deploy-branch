@@ -10,8 +10,7 @@ for (const key of [
   'GITHUB_REPOSITORY',
   'GITHUB_REPOSITORY_OWNER',
   'GITHUB_REPOSITORY_NAME',
-  'DEPENDENCY_MY_CUSTOM_API',
-  'DEPENDENCY_MY_CUSTOM_CLIENT',
+  'DEPENDENCY_API',
   'NEW_VERSION',
 ]) {
   env[key] = process.env[key];
