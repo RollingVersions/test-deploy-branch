@@ -24,6 +24,5 @@ assert.strictEqual(env.GITHUB_REPOSITORY, 'RollingVersions/test-deploy-branch');
 assert.strictEqual(env.GITHUB_REPOSITORY_OWNER, 'RollingVersions');
 assert.strictEqual(env.GITHUB_REPOSITORY_NAME, 'test-deploy-branch');
 
-assert(isVersion(env.DEPENDENCY_MY_CUSTOM_API));
-assert(isVersion(env.DEPENDENCY_MY_CUSTOM_CLIENT));
+assert(isVersion(env.DEPENDENCY_API));
 assert(isVersion(env.NEW_VERSION));
