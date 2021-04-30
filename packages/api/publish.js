@@ -17,6 +17,8 @@ for (const key of [
   env[key] = process.env[key];
 }
 
+console.log('DEPLOYING API', env);
+
 assert(env.CANARY === undefined || /^\d+$/.test(env.CANARY));
 assert.strictEqual(env.GITHUB_REPOSITORY, 'RollingVersions/test-deploy-branch');
 assert.strictEqual(env.GITHUB_REPOSITORY_OWNER, 'RollingVersions');
@@ -25,5 +27,3 @@ assert.strictEqual(env.GITHUB_REPOSITORY_NAME, 'test-deploy-branch');
 assert(isVersion(env.DEPENDENCY_MY_CUSTOM_API));
 assert(isVersion(env.DEPENDENCY_MY_CUSTOM_CLIENT));
 assert(isVersion(env.NEW_VERSION));
-
-console.log('DEPLOYING API', env);
