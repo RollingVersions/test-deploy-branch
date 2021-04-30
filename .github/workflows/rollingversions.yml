@@ -15,6 +15,6 @@ jobs:
           node-version: 12.x
           registry-url: 'https://registry.npmjs.org'
       - run: npm install
-      - run: npx rollingversions@canary publish --deploy-branch ${{ github.ref }}
+      - run: npx rollingversions@canary publish --deploy-branch "${GITHUB_REF#refs/heads/}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
