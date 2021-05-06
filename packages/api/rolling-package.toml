@@ -1,4 +1,5 @@
 name = "api"
+versioning = "BY_BRANCH"
 
 [scripts]
 publish = "node publish.js"
