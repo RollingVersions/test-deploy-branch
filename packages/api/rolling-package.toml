@@ -1,4 +1,5 @@
 name = "api"
+versioning = "ALWAYS_INCREASING"
 
 [scripts]
 publish = "node publish.js"
